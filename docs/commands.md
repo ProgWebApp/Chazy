@@ -6,9 +6,24 @@
 
 - [Chazy : Commands](#chazy--commands)
   - [Table Of Contents](#table-of-contents)
-  - [Commands](#commands)
+  - [Frontend Commands](#frontend-commands)
+  - [Backend Commands](#backend-commands)
 
-## Commands
+## Frontend Commands
+
+```bash
+# Init VueJS 3 with Vuetify 3
+yarn create vuetify
+> Project name : Chazy
+> Preset : Custom
+> TypeScript : Yes
+> Vue Router : Yes
+> Pinia : Yes
+> ESLint : Yes
+> Package Manager : Yarn
+```
+
+## Backend Commands
 
 ```bash
 # TODO

@@ -1,0 +1,27 @@
+---
+name: chazy
+
+networks:
+  chazy-net:
+    name: chazy-net
+
+volumes:
+  chazy-data:
+    name: chazy-data
+
+services:
+  frontend:
+    image: chazy-frontend:latest
+    networks:
+      - chazy-net
+    ports:
+      - 8080:80
+    restart: always
+
+  backend:
+    image: chazy-backend:latest
+    volumes:
+      - chazy-data:/data:rw
+    networks:
+      - chazy-net
+    restart: always

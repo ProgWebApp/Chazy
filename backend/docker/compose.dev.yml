@@ -1,0 +1,17 @@
+---
+name: chazy-dev
+
+services:
+  backend:
+    image: chazy-backend:dev
+    build:
+      context: ..
+      dockerfile: ./docker/Dockerfile.dev
+    command: TODO
+    environment:
+      TODO: 'TODO'
+    volumes:
+      - ../TODO:/TODO:rw
+    ports:
+      - 8090:8090
+    restart: 'no'

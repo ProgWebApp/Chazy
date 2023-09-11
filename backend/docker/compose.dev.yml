@@ -7,11 +7,10 @@ services:
     build:
       context: ..
       dockerfile: ./docker/Dockerfile.dev
-    command: TODO
-    environment:
-      TODO: 'TODO'
     volumes:
-      - ../TODO:/TODO:rw
+      - ../migrations:/pb/pb_migrations:rw
+      - ../hooks:/pb/pb_hooks:rw
+      - ../data:/pb/pb_data:rw
     ports:
       - 8090:8090
     restart: 'no'

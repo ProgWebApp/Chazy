@@ -45,7 +45,7 @@ frontend-publish:
 
 
 backend-bash:
-	docker compose -f ./backend/docker/compose.dev.yml run --rm --service-ports backend bash
+	docker compose -f ./backend/docker/compose.dev.yml run --rm --service-ports backend sh
 
 backend-build-dev:
 	docker compose -f ./backend/docker/compose.dev.yml build

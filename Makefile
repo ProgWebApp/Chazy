@@ -14,7 +14,7 @@ frontend-bash:
 
 frontend-build-dev:
 	docker compose -f ./frontend/docker/compose.dev.yml build
-	docker compose -f ./frontend/docker/compose.dev.yml run --rm frontend yarn install
+	docker compose -f ./frontend/docker/compose.dev.yml run --rm frontend bun install
 
 frontend-start-dev:
 	docker compose -f ./frontend/docker/compose.dev.yml up
@@ -24,11 +24,11 @@ frontend-start-dev-d:
 
 frontend-lint:
 	echo "TODO"
-	docker compose -f ./frontend/docker/compose.dev.yml run --rm frontend yarn lint
+	docker compose -f ./frontend/docker/compose.dev.yml run --rm frontend bun lint
 
 frontend-format:
 	echo "TODO"
-	docker compose -f ./frontend/docker/compose.dev.yml run --rm frontend yarn format
+	docker compose -f ./frontend/docker/compose.dev.yml run --rm frontend bun format
 
 frontend-build:
 	docker compose -f ./frontend/docker/compose.yml build

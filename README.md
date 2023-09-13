@@ -55,7 +55,7 @@ services:
 - **MakeFile**
 - **Docker Way** : Just Docker, nothing more.
 - **Classic Way** :
-  - NodeJS with NPM and Yarn
+  - NodeJS with NPM and Bun
   - PocketBase
 
 ### Build and Deploy

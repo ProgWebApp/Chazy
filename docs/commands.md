@@ -21,6 +21,10 @@ yarn create vuetify
 > Pinia : Yes
 > ESLint : Yes
 > Package Manager : Yarn
+
+curl -fsSL https://bun.sh/install | bash 
+
+bun install
 ```
 
 ## Backend Commands

@@ -7,7 +7,7 @@ services:
     build:
       context: ..
       dockerfile: ./docker/Dockerfile.dev
-    command: npx vite --host 0.0.0.0
+    command: bun vite --host 0.0.0.0
     environment:
       VITE_BACKEND_URL: 'TODO'
     volumes:

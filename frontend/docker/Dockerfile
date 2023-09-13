@@ -3,13 +3,15 @@ FROM node:18-bookworm-slim
 WORKDIR /usr/app
 USER 1000
 
-ADD package.json,yarn.lock .
+RUN curl -fsSL https://bun.sh/install | bash
 
-RUN yarn install
+ADD package.json,bun.lockb .
+
+RUN bun install
 
 ADD . .
 
-RUN npx vue-tsc --noEmit && npx vite build
+RUN bunx vue-tsc --noEmit && bunx vite build
 
 
 # Production Stage
